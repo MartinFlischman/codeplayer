@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayer</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img id="logoImg" src="images/logo.png" alt="Code Player Logo">
+            CodePlayer
+        </div>
+        <div id="btnContaneir">
+            <div class="toggleBtn active" id="html" >HTML</div>
+            <div class="toggleBtn" id="css" >CSS</div>
+            <div class="toggleBtn" id="javascript" >JavaScript</div>
+            <div class="toggleBtn active" id="output" >Output</div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <textarea id="htmlPanel" class="panel" placeholder="<p>Add your HTML here</p>"></textarea>
+        <textarea id="cssPanel" class="panel hidden" placeholder="p { Add your CSS styling here; }"></textarea>
+        <textarea id="javascriptPanel" class="panel hidden" placeholder="alert('Add your JavaScript code here');"></textarea>
+        <iframe sandbox="allow-scripts" id="outputPanel" class="panel"></iframe>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
