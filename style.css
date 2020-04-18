@@ -97,8 +97,6 @@ body {
 
 textarea {
     background-color: #282b34;
-    /*Fallback font color*/
-    color: #ffffff;
     resize: none;
     border-top: none;
     border-color: #414654;
@@ -106,13 +104,15 @@ textarea {
 
 .panel {
     float: left;
-    width: 50%;
     font-size: 16px;
     border-left: none;
 }
 
 iframe {
     border: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 #htmlPanel {
@@ -125,11 +125,6 @@ iframe {
 
 #javascriptPanel {
     color: #e2c007;
-}
-
-/*Not working*/
-#outputPanel {
-    color: #98c379;
 }
 
 .hidden {
